@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock & Roll Star Chronicle | Freddie Mercury</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23090807'/%3E%3Cpath d='M18 44h28l-4-18-8 10-6-16-6 16-8-10z' fill='%23e9c46a'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="stage" aria-labelledby="page-title">
+        <div class="stage-media" aria-hidden="true"></div>
+        <div class="stage-copy">
+          <div class="artist-control">
+            <label for="artist-select">Artist</label>
+            <select id="artist-select"></select>
+          </div>
+          <p class="kicker" id="artist-kicker">Rock & Roll Star Chronicle</p>
+          <h1 id="page-title">Freddie Mercury</h1>
+          <p class="intro" id="artist-intro">
+            A song-by-song career timeline where each hit opens the story behind the moment:
+            the recording, the pressure, the persona, and the private context around the artist.
+          </p>
+          <div class="stats" id="artist-stats" aria-label="Artist summary"></div>
+        </div>
+      </section>
+
+      <section class="chronicle" aria-label="Freddie Mercury hit-song timeline">
+        <div class="timeline-wrap">
+          <div class="timeline-heading">
+            <p>Hits over time</p>
+            <h2>Click a song dot to open its chapter</h2>
+          </div>
+          <ol class="timeline" id="timeline"></ol>
+        </div>
+
+        <article class="story-panel" id="story-panel" aria-live="polite">
+          <div class="story-topline">
+            <span id="story-year"></span>
+            <span id="story-era"></span>
+          </div>
+          <h2 id="story-title"></h2>
+          <p id="story-hook" class="story-hook"></p>
+
+          <div class="story-grid">
+            <section>
+              <h3>Backstory</h3>
+              <p id="story-backstory"></p>
+            </section>
+            <section>
+              <h3>Career context</h3>
+              <p id="story-career"></p>
+            </section>
+            <section>
+              <h3>Personal context</h3>
+              <p id="story-personal"></p>
+            </section>
+          </div>
+
+          <dl class="song-meta">
+            <div>
+              <dt>Album</dt>
+              <dd id="story-album"></dd>
+            </div>
+            <div>
+              <dt>Writer credit</dt>
+              <dd id="story-writer"></dd>
+            </div>
+            <div>
+              <dt>Why it matters</dt>
+              <dd id="story-impact"></dd>
+            </div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">Sources</h2>
+        <p>
+          Prototype text is based on official artist sites and public discography references.
+          Replace the data in <code>script.js</code> to add more artists.
+        </p>
+        <ul id="source-list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
